@@ -1,0 +1,17 @@
+body{
+  font-family: monospace;
+  background-color: #eaeaea;
+}
+
+.button{
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  background-color: #bb3355;
+  border-radius: 3px;
+  display: inline-block;
+  width: 10em;
+  height: 3em;
+  text-align: center;
+  line-height: 3em;
+}

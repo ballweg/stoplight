@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Stoplight control</title>
+    <script src="main.js"></script>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Stoplight</h1>
+    <div class="button" id="go">Go</div>
+    <div class="button" id="stop">Stop</div>
+    <div class="button" id="off">Off</div>
+
+    <script>
+      // bind handlers
+      document.getElementById("go").onclick = function(){ setLight('go'); };
+      document.getElementById("stop").onclick = function(){ setLight('stop') };
+      document.getElementById("off").onclick = function(){ setLight('off') };
+    </script>
+  </body>
+</html>
