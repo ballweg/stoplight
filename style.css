@@ -1,17 +1,66 @@
-body{
+body, input, button{
   font-family: monospace;
+}
+body{
   background-color: #eaeaea;
 }
 
-.button{
+h1, h2{
+  text-align: center;
+  margin-top: 3em;
+}
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.circle, .button, .btn-large{
   cursor: pointer;
+  text-align: center;
+}
+
+.button, button, .btn-large{
+  background-color: #333;
   color: #fff;
-  font-weight: bold;
-  background-color: #bb3355;
   border-radius: 3px;
   display: inline-block;
-  width: 10em;
-  height: 3em;
-  text-align: center;
+  border: none;
+}
+
+.btn-large{
   line-height: 3em;
+  width: 6em;
+  height: 3em;
+}
+
+.frame{
+  /*width: 5em;*/
+  display: inline-block;
+  background-color: orange;
+  border-radius: 3px;
+  box-shadow: 2px 3px 12px rgba(0,0,0, 0.5);
+  max-width: 375px;
+}
+
+.circle{
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  border: solid 1px #222;
+  box-shadow: 2px 2px 2px rgba(0,0,0, 0.3);
+  background-color: #333;
+  height: 8em;
+  width: 8em;
+  margin: 0.4em;
+  line-height: 8em;
+}
+
+.green{background-color: #a52a2a;}
+  .red{background-color: #96d435;}
+ .anon{background-color: #00000;}
+
+.controls{
+  margin: 1em 0;
+  color: #222;
 }

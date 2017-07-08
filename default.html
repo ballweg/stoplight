@@ -8,15 +8,29 @@
   </head>
   <body>
     <h1>Stoplight</h1>
-    <div class="button" id="go">Go</div>
-    <div class="button" id="stop">Stop</div>
-    <div class="button" id="off">Off</div>
-
+    <div class="center">
+      <div class="frame">
+        <div class="circle" id="stop">Stop</div>
+        <div class="circle" id="yellow">Yellow</div>
+          <div class="circle" id="go">Go</div>
+      </div>
+    </div>
+    <h2>Controls</h2>
+    <div class="controls center">
+      <div class="button btn-large" id="off">Off</div>
+    </div>
+    <div class="controls center">
+      <label for="token">Device Token</label>
+      <input id="token" type="text" name="token"/>
+      <button id="setToken">Set</button>
+    </div>
     <script>
       // bind handlers
-      document.getElementById("go").onclick = function(){ setLight('go'); };
-      document.getElementById("stop").onclick = function(){ setLight('stop') };
-      document.getElementById("off").onclick = function(){ setLight('off') };
+      document.getElementById("go").onclick = function(){     setLight('green'); };
+      document.getElementById("stop").onclick = function(){   setLight('red')    };
+      document.getElementById("yellow").onclick = function(){ setLight('yellow') };
+      document.getElementById("off").onclick = function(){    setLight('off')    };
+      document.getElementById("setToken").onclick = function(){ setToken() };
     </script>
   </body>
 </html>
