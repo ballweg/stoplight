@@ -103,7 +103,7 @@ function setColors(redOn, yelOn, grnOn, lamps){
 function setLight(state){
   var lamps = 10;
   var token = "?access_token=" + getToken();
-  var api   = "https://us.wio.seeed.io/v1/node/GroveLedWs2812D0/segment/0/";
+  var api   = "https://us.wio.seeed.io/v1/node/GroveLedWs2812D1/segment/0/";
   switch (state) {
     case 'green':
       var colors = setColors(false, false, true, lamps);
