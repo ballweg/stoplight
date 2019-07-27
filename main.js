@@ -66,32 +66,27 @@ function setColors(redOn, yelOn, grnOn, lamps){
   var x  = '000000';    // off/black
 
   var colors = '';
-  // Red
-//   for (var i = 0; i < lamps; i++) {
-    if(redOn){
-      colors += r;
-    } else {
-      colors += x;
-    }
-//   }
+  // Green
+  if(grnOn){
+    colors += g;
+  } else {
+    colors += x;
+  }
 
   // Yellow
-//   for (var i = 0; i < lamps; i++) {
-    if(yelOn){
-      colors += y;
-    } else {
-      colors += x;
-    }
-//   }
+  if(yelOn){
+    colors += y;
+  } else {
+    colors += x;
+  }
+  
+  // Red
+  if(redOn){
+    colors += r;
+  } else {
+    colors += x;
+  }
 
-  // Green
-//   for (var i = 0; i < lamps; i++) {
-    if(grnOn){
-      colors += g;
-    } else {
-      colors += x;
-    }
-//   }
   console.log('writing ' + colors);
   updateUI(redOn, yelOn, grnOn);
   return colors;
