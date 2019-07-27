@@ -20,7 +20,7 @@ function ajax(url){
   function logResponse() {
     if (httpRequest.readyState === XMLHttpRequest.DONE) {
       if (httpRequest.status === 200) {
-        // console.log(httpRequest.responseText);
+        console.log(httpRequest.responseText);
       } else {
         console.error('There was a problem with the request.');
       }
@@ -118,7 +118,7 @@ function setLight(state){
       var colors = setColors(false, false, false, lamps);
   }
   ajax(api+colors+token);
-  // console.log(api+colors+token);
+  console.log(api+colors+token);
 }
 
 // set the auth token in local storage
